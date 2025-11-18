@@ -24,7 +24,7 @@ T = Node(1, [
 
 def tree_size(T):
     if is_leaf(T):
-        return 0
+        return 1
     n = arity(T)
     s = 1
     for i in range(n):

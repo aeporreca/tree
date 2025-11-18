@@ -38,7 +38,7 @@ def tree_flip(T):
         return Leaf(k)
     n = arity(T)
     C = []
-    for i in range(n):
+    for i in reversed(range(n)):
         S = tree_flip(child(T, i))
         C.append(S)
     return Node(k, C)

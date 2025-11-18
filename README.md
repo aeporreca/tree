@@ -26,7 +26,7 @@ def tree_size(T):
     if is_leaf(T):
         return 0
     n = arity(T)
-    s = 0
+    s = 1
     for i in range(n):
         s = s + tree_size(child(T, i))
     return s
